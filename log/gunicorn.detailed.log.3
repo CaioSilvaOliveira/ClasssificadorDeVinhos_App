@@ -1,0 +1,63 @@
+[2023-07-13 19:55:49,922] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 19:55:49] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 19:56:06,448] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 19:56:06] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 19:57:42,151] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 19:57:42] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:00:57,486] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:00:57] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:09:02,334] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:09:02] "[33mGET /1 HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:09:15,589] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:09:21,508] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:09:21] "[33mGET /1 HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:09:37,064] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:09:37] "[33mGET /aluno/1 HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:10:05,408] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:10:05] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:11:00,523] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:11:04,828] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:11:04] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:11:34,890] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:11:34] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:11:47,811] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:11:47] "[33mGET /aluno/1 HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:11:59,460] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:11:59] "[33mGET /1 HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:12:49,719] ERROR log_exception() L1449 Exception on /aluno [GET] - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias_App\app.py", line 94, in get_aluno
+    aluno_id = query.id
+AttributeError: 'AlunoBuscaSchema' object has no attribute 'id'
+[2023-07-13 20:12:49,728] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:12:49] "[35m[1mGET /aluno HTTP/1.1[0m" 500 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:17:44,554] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,257] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,415] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,417] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,419] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,492] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:17,497] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:18:17] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:18:55,004] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,123] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,266] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,269] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,271] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,388] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:01,391] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:01] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:12,102] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:12] "GET /aluno?id=1 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:34,935] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:34] "GET /aluno?id=2 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-13 20:19:40,417] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:19:40] "GET /aluno?id=3 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
