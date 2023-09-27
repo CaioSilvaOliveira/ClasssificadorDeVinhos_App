@@ -2,14 +2,18 @@ from flask_openapi3 import OpenAPI, Info, Tag
 from flask import redirect
 
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy import select, update
 
 from model import Session, Aluno
 from logger import logger
 from schemas import *
 from flask_cors import CORS
 
+from schemas.aluno import AlunoBuscaPorNomeSchema
+
 info = Info(title="Minha API", version="1.0.0")
 app = OpenAPI(__name__, info=info)
+
 CORS(app)
 
 # definindo tags
@@ -82,6 +86,30 @@ def get_alunos():
         print(alunos)
         return apresenta_alunos(alunos), 200
 
+@app.get('/aluno', tags=[aluno_tag],
+         responses={"200": AlunoBuscaPorNomeSchema, "404": ErrorSchema})
+def get_aluno(query: AlunoBuscaPorNomeSchema):
+    """Faz a busca por um Aluno a partir do nome do aluno
+
+    Retorna uma representação aluno.
+    """
+    aluno_nome = query.nome
+    logger.info(f"Coletando dados sobre o aluno #{aluno_nome}")
+    # criando conexão com a base
+    session = Session()
+    # fazendo a busca
+    aluno = session.query(Aluno).filter(Aluno.nome == aluno_nome).first()
+
+    if not aluno:
+        # se o produto não foi encontrado
+        error_msg = "Aluno não encontrado na base :/"
+        logger.warning(f"Erro ao buscar produto '{aluno_nome}', {error_msg}")
+        return {"mesage": error_msg}, 404
+    else:
+        logger.info("Aluno econtrado: %s" % aluno)
+        # retorna a representação de produto
+        return apresenta_aluno(aluno), 200
+
 
 @app.delete('/aluno', tags=[aluno_tag],
             responses={"200": AlunoDelSchema, "404": ErrorSchema})
@@ -108,3 +136,51 @@ def del_aluno(query: AlunoDelSchema):
         error_msg = "Aluno não encontrado na base :/"
         logger.warning(f"Erro ao deletar aluno #'{aluno_nome}', {error_msg}")
         return {"mesage": error_msg}, 404
+
+@app.put('/aluno/<nome>', tags=[aluno_tag],
+          responses={"200": AlunoViewSchema, "409": ErrorSchema, "400": ErrorSchema})
+def put_aluno(path: AlunoBuscaPorNomeSchema, form: AlunoSchema):
+    """Atualiza um Aluno
+
+    Retorna uma representação do aluno.
+    """
+    aluno_nome = path.nome
+    data_nascimento = form.data_nascimento
+    sexo = form.sexo
+    nome_responsavel = form.nome_responsavel
+
+    logger.info(f"Coletando dados sobre o aluno #{aluno_nome}")
+    # criando conexão com a base
+    
+    # fazendo a busca
+    #aluno = session.query(Aluno).filter(Aluno.nome == aluno_nome).first()
+    aluno = Aluno(
+        nome=aluno_nome,
+        data_nascimento=data_nascimento,
+        sexo=sexo,
+        nome_responsavel=nome_responsavel
+    )
+    
+    try:
+        logger.info("Alterando aluno")
+        session = Session()
+        stmt = update(Aluno) \
+            .where(Aluno.nome == aluno.nome) \
+            .values( \
+                data_nascimento = aluno.data_nascimento, \
+                sexo = aluno.sexo, \
+                nome_responsavel = aluno.nome_responsavel)
+        
+        session.execute(stmt)
+        session.commit()
+        logger.info(f"Aluno atualizado com suceso: '{aluno.nome}'")
+        return apresenta_aluno(aluno), 200
+    
+    except Exception as e:
+            # caso um erro fora do previsto
+            error_msg = "Não foi possível atualizar item :/"
+            logger.warning(f"Erro ao atualizar aluno '{aluno.nome}', {error_msg}")
+            return {"mesage": error_msg}, 400
+    
+
+        

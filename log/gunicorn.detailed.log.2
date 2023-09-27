@@ -1,9 +1,25 @@
-[2023-07-13 20:21:24,114] INFO _log() L224   * Running on all addresses (0.0.0.0)
+[2023-09-26 04:57:01,109] INFO put_aluno() L147  Coletando dados sobre o aluno #Aluno da Silva - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L147 
+[2023-09-26 04:57:01,161] WARNING put_aluno() L155  Erro ao buscar produto 'Aluno da Silva', Aluno não encontrado na base :/ - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L155 
+[2023-09-26 04:57:01,162] INFO _log() L224  127.0.0.1 - - [26/Sep/2023 04:57:01] "[33mPUT /aluno/Lucas HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:02:38,628] INFO put_aluno() L147  Coletando dados sobre o aluno #Aluno da Silva - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L147 
+[2023-09-26 05:02:38,632] WARNING put_aluno() L155  Erro ao buscar produto 'Aluno da Silva', Aluno não encontrado na base :/ - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L155 
+[2023-09-26 05:02:38,635] INFO _log() L224  127.0.0.1 - - [26/Sep/2023 05:02:38] "[33mPUT /aluno/Lucas HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:06:37,887] INFO _log() L224   * Running on all addresses (0.0.0.0)
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:5000
- * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:21:40,167] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:21:40] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:22:10,033] ERROR log_exception() L1449 Exception on /aluno [DELETE] - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py L1449
+ * Running on http://192.168.0.6:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:08:43,586] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.6:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:08:50,643] INFO put_aluno() L147  Coletando dados sobre o aluno #Caio - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L147 
+[2023-09-26 05:08:50,654] WARNING put_aluno() L155  Erro ao buscar produto 'Caio', Aluno não encontrado na base :/ - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L155 
+[2023-09-26 05:08:50,656] INFO _log() L224  127.0.0.1 - - [26/Sep/2023 05:08:50] "[33mPUT /aluno/Lucas HTTP/1.1[0m" 404 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:09:29,118] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.6:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 05:09:39,127] ERROR log_exception() L1449 Exception on /aluno/Lucas [PUT] - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py L1449
 Traceback (most recent call last):
   File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -15,68 +31,33 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1503, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\scaffold.py", line 355, in wrapper
+  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\scaffold.py", line 273, in wrapper
     resp = _do_wrapper(
   File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
     response = func(**request_kwargs)
-  File "C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias_App\app.py", line 119, in del_aluno
-    aluno_nome = unquote(unquote(query.nome))
-AttributeError: 'AlunoBuscaSchema' object has no attribute 'nome'
-[2023-07-13 20:22:10,043] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:22:10] "[35m[1mDELETE /aluno?id=1 HTTP/1.1[0m" 500 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:23:24,544] INFO _log() L224   * Running on all addresses (0.0.0.0)
+TypeError: put_aluno() missing 1 required positional argument: 'nome'
+[2023-09-26 05:09:39,214] INFO _log() L224  127.0.0.1 - - [26/Sep/2023 05:09:39] "[35m[1mPUT /aluno/Lucas HTTP/1.1[0m" 500 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 09:10:24,850] INFO _log() L224  192.168.0.11 - - [26/Sep/2023 09:10:24] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 09:10:24,900] INFO _log() L224  192.168.0.11 - - [26/Sep/2023 09:10:24] "[32mGET /openapi HTTP/1.1[0m" 308 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-26 09:10:24,995] INFO _log() L224  192.168.0.11 - - [26/Sep/2023 09:10:24] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:15:49,415] INFO _log() L224   * Running on all addresses (0.0.0.0)
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://127.0.0.1:5000
- * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:23:30,684] ERROR log_exception() L1449 Exception on /aluno [DELETE] - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py L1449
-Traceback (most recent call last):
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1503, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\scaffold.py", line 355, in wrapper
-    resp = _do_wrapper(
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
-    response = func(**request_kwargs)
-  File "C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias_App\app.py", line 119, in del_aluno
-    aluno_id = unquote(unquote(query.id))
-  File "C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\urllib\parse.py", line 656, in unquote
-    if '%' not in string:
-TypeError: argument of type 'int' is not iterable
-[2023-07-13 20:23:30,692] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:23:30] "[35m[1mDELETE /aluno?id=1 HTTP/1.1[0m" 500 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:26:41,255] INFO _log() L224   * Running on all addresses (0.0.0.0)
-   WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://127.0.0.1:5000
- * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:26:52,424] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:26:52] "DELETE /aluno?id=1 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:29:30,454] INFO _log() L224   * Running on all addresses (0.0.0.0)
-   WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://127.0.0.1:5000
- * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:29:36,415] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:29:36] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:29:54,452] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:29:54] "DELETE /aluno?id=2 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:30:25,419] INFO _log() L224   * Running on all addresses (0.0.0.0)
-   WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://127.0.0.1:5000
- * Running on http://10.0.0.100:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:30:30,749] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:30:30] "DELETE /aluno?id=3 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:31:31,563] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:31:31] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:41:18,872] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:41:18] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:42:08,315] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:42:08] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:42:35,894] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:42:35] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:43:17,975] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:43:17] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:43:29,506] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:43:29] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:43:39,614] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:43:39] "DELETE /aluno?id=1 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:43:46,990] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:43:46] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:44:27,668] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:44:27] "POST /aluno HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:44:31,563] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:44:31] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-13 20:45:06,757] INFO _log() L224  127.0.0.1 - - [13/Jul/2023 20:45:06] "GET /aluno?id=2 HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
-[2023-07-14 11:10:01,344] INFO _log() L224   * Running on all addresses (0.0.0.0)
-   WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.9:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+ * Running on http://192.168.0.6:5000 (Press CTRL+C to quit) - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:16:18,336] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:16:18] "GET /alunos HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:16:37,183] INFO get_aluno() L96   Coletando dados sobre o aluno #Lucas - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L96  
+[2023-09-27 01:16:37,191] INFO get_aluno() L108  Aluno econtrado: <model.aluno.Aluno object at 0x00000249F67E38E0> - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L108 
+[2023-09-27 01:16:37,193] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:16:37] "GET /aluno?nome=Lucas HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:17:02,512] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:17:02] "OPTIONS /aluno/Lucas HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:17:02,518] INFO put_aluno() L147  Coletando dados sobre o aluno #Lucas - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L147 
+[2023-09-27 01:17:02,522] INFO put_aluno() L158  Aluno econtrado: <model.aluno.Aluno object at 0x00000249F67E3730> - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L158 
+[2023-09-27 01:17:02,522] WARNING put_aluno() L176  Erro ao atualizar aluno 'Lucas', Não foi possível atualizar item :/ - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L176 
+[2023-09-27 01:17:02,524] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:17:02] "[31m[1mPUT /aluno/Lucas HTTP/1.1[0m" 400 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:19:42,291] INFO get_aluno() L96   Coletando dados sobre o aluno #Lucas - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L96  
+[2023-09-27 01:19:42,296] INFO get_aluno() L108  Aluno econtrado: <model.aluno.Aluno object at 0x00000249F68982E0> - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L108 
+[2023-09-27 01:19:42,298] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:19:42] "GET /aluno?nome=Lucas HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:19:47,835] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:19:47] "OPTIONS /aluno/Lucas HTTP/1.1" 200 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-27 01:19:47,848] INFO put_aluno() L147  Coletando dados sobre o aluno #Lucas - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L147 
+[2023-09-27 01:19:47,854] INFO put_aluno() L158  Aluno econtrado: <model.aluno.Aluno object at 0x00000249F67E2FB0> - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L158 
+[2023-09-27 01:19:47,855] WARNING put_aluno() L176  Erro ao atualizar aluno 'Lucas', Não foi possível atualizar item :/ - call_trace=C:\Users\caiod\Dev\Projetos-Estudos\pos\ColoniaDeFerias\ColoniaDeFerias_App\app.py L176 
+[2023-09-27 01:19:47,856] INFO _log() L224  127.0.0.1 - - [27/Sep/2023 01:19:47] "[31m[1mPUT /aluno/Lucas HTTP/1.1[0m" 400 - - call_trace=C:\Users\caiod\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 

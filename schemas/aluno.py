@@ -11,6 +11,11 @@ class AlunoSchema(BaseModel):
     sexo: str = "Masculino"
     nome_responsavel: str = "Responsavel da Silva"
 
+class AlunoBuscaPorNomeSchema(BaseModel):
+    """ Define como deve ser a estrutura que representa a busca. Que será
+        feita apenas com base no nome do aluno.
+    """
+    nome: str = "Caio"
 
 class ListagemAlunosSchema(BaseModel):
     """ Define como uma listagem de alunos será retornada.
