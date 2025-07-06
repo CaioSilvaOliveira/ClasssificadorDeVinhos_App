@@ -1,0 +1,37 @@
+# Ambiente virtual
+venv/
+.env/
+.envrc
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Arquivos de configuração do VSCode
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Dados temporários
+*.tmp
+*.bak
+
+# Arquivos de testes
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# Modelos e dados gerados
+*.pkl
+*.h5
+*.db
+
+# Sistema operacional
+.DS_Store
