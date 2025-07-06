@@ -28,10 +28,5 @@ htmlcov/
 .tox/
 .pytest_cache/
 
-# Modelos e dados gerados
-*.pkl
-*.h5
-*.db
-
 # Sistema operacional
 .DS_Store
