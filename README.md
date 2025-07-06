@@ -17,6 +17,10 @@ As principais tecnologias e bibliotecas utilizadas neste projeto são:
 - [pickle-mixin](https://pypi.org/project/pickle-mixin/)
 
 ---
+## Vídeo de demonstração da plataforma
+
+https://youtu.be/D9f0CufKflI
+
 ### Instalação
 
 
